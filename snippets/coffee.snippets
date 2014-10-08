@@ -1,0 +1,64 @@
+snippet cs
+	cx = React.addons.classSet
+snippet cdm
+	componentDidMount: ->
+		${1}
+snippet cdup
+	componentDidUpdate: (prevProps, prevState) ->
+		${1}
+snippet cwm
+	componentWillMount: ->
+		${1}
+snippet cwr
+	componentWillReceiveProps: (nextProps) ->
+		${1}
+snippet cwun
+	componentWillUnmount: ->
+		${1}
+snippet cwu
+	componentWillUpdate: (nextProps, nextState) ->
+		${1}
+snippet cx
+	cx
+		${1}: ${2}
+snippet fup
+	forceUpdate ${1:callback}
+snippet gdp
+	getDefaultProps: ->
+		${1}
+snippet gis
+	getInitialState: ->
+		${1}: ${2}
+snippet ism
+	isMounted()
+snippet cjsx
+	/**
+	 * @cjsx React.DOM
+	 */
+snippet pt
+	propTypes:
+		${1}: React.PropTypes.${2:string}
+snippet reqr
+	React = require("react")
+snippet rcc
+	${1:ClassName} = React.createClass
+
+		render: ->
+			${0:<div />}
+
+	module.exports = $1
+snippet ren
+	render: ->
+		${1:<div />}
+snippet sst
+	setState
+		${1}: ${2}
+snippet scu
+	shouldComponentUpdate: (nextProps, nextState) ->
+		${1}
+snippet props
+	@props.${1}
+snippet state
+	@state.${1}
+snippet trp
+	transferPropsTo ${1}
