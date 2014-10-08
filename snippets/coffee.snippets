@@ -20,7 +20,7 @@ snippet cwu
 		${1}
 snippet cx
 	cx
-		${1}: ${2}
+		${1:key}: ${2:value}
 snippet fup
 	forceUpdate ${1:callback}
 snippet gdp
@@ -28,7 +28,7 @@ snippet gdp
 		${1}
 snippet gis
 	getInitialState: ->
-		${1}: ${2}
+		${1:key}: ${2:value}
 snippet ism
 	isMounted()
 snippet cjsx
@@ -37,22 +37,26 @@ snippet cjsx
 	 */
 snippet pt
 	propTypes:
-		${1}: React.PropTypes.${2:string}
+		${1:prop}: React.PropTypes.${2:string}
 snippet reqr
 	React = require("react")
 snippet rcc
 	${1:ClassName} = React.createClass
 
 		render: ->
-			${0:<div />}
+			<div>
+				${2}
+			<div>
 
 	module.exports = $1
 snippet ren
 	render: ->
-		${1:<div />}
+		<div>
+			${1}
+		<div>
 snippet sst
 	setState
-		${1}: ${2}
+		${1:key}: ${2:value}
 snippet scu
 	shouldComponentUpdate: (nextProps, nextState) ->
 		${1}
