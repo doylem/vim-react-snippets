@@ -24,14 +24,19 @@ Within any Javascript, JSX or CJSX file, you should be able to do the following:
 gdp<Tab>
 ```
 
-expanding to
-
+expanding to (JSX)
 ```
 getDefaultProps: function() {
-    return {
-
-    };
+  return {
+    $1
+  };
 },
+```
+
+or (CJSX)
+```
+getDefaultProps: ->
+  $1
 ```
 
 And a bunch of others!
